@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Firma Email — Flavio Sappino</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #ffffff;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .instructions {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  .instructions strong {
+    color: #0A0A14;
+    font-weight: 600;
+  }
+
+  .copy-btn {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #42AEE1;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .copy-btn:hover { background: #2e99cc; }
+  .copy-btn.copied { background: #2ecc71; }
+
+  /* ---- FIRMA ---- */
+  #firma-container {
+    outline: 2px dashed transparent;
+    border-radius: 4px;
+    transition: outline 0.2s;
+    cursor: text;
+  }
+  #firma-container:focus {
+    outline: 2px dashed #42AEE144;
+  }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  Clicca <strong>Copia firma</strong> oppure seleziona tutto manualmente (Ctrl+A dentro il riquadro) e incolla nelle impostazioni firma di Gmail.
+</div>
+
+<button class="copy-btn" id="btn">Copia firma</button>
+
+<!-- ===================== FIRMA ===================== -->
+<div id="firma-container" tabindex="0">
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; max-width: 400px; width: 400px;">
+
+  <tr>
+    <td style="padding-bottom: 6px;">
+      <div style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; color: #0A0A14; letter-spacing: -0.5px; line-height: 1.2;">
+        Flavio Sappino
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-bottom: 16px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="vertical-align: middle;">
+            <span style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 400; color: #888888;">AI Agent Consultant</span>
+          </td>
+          <td style="padding: 0 10px; color: #cccccc; font-size: 12px; vertical-align: middle;">·</td>
+          <td style="vertical-align: middle;">
+            <span style="display: inline-block; background: #ffffff; color: #0A0A14; font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 2px; padding: 4px 11px; border-radius: 20px; text-transform: uppercase; border: 1.5px solid #0A0A14; line-height: 1;">WEBTOUP</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- LINEE DECORATIVE -->
+  <tr>
+    <td style="padding-bottom: 16px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="display: block; width: 80px; height: 2px; background: #42AEE1; border-radius: 2px; margin-bottom: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="display: block; width: 200px; height: 1px; background: #42AEE1; opacity: 0.4; border-radius: 2px; margin-bottom: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="display: block; width: 340px; height: 1px; background: #42AEE1; opacity: 0.15; border-radius: 2px; font-size: 0; line-height: 0;">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- EMAIL -->
+  <tr>
+    <td style="padding-bottom: 9px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="width: 26px; vertical-align: middle;">
+            <img src="https://raw.githubusercontent.com/Ersappo/webtoup-assets/main/icon_mail.png" width="18" height="18" alt="" style="display:block;">
+          </td>
+          <td style="padding-left: 8px; vertical-align: middle;">
+            <a href="mailto:flaviosappinowebtoup@gmail.com" style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 400; color: #0A0A14; text-decoration: none;">flaviosappinowebtoup@gmail.com</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- TELEFONO -->
+  <tr>
+    <td style="padding-bottom: 9px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="width: 26px; vertical-align: middle;">
+            <img src="https://raw.githubusercontent.com/Ersappo/webtoup-assets/main/icon_phone.png" width="18" height="18" alt="" style="display:block;">
+          </td>
+          <td style="padding-left: 8px; vertical-align: middle;">
+            <span style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 400; color: #0A0A14;">+39 331 5941334</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- SITO -->
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="width: 26px; vertical-align: middle;">
+            <img src="https://raw.githubusercontent.com/Ersappo/webtoup-assets/main/icon_web.png" width="18" height="18" alt="" style="display:block;">
+          </td>
+          <td style="padding-left: 8px; vertical-align: middle;">
+            <a href="https://webtoup.it" style="font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 500; color: #42AEE1; text-decoration: none;">webtoup.it</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+</table>
+</div>
+<!-- ===================== FINE FIRMA ===================== -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  document.getElementById('btn').addEventListener('click', function() {
+    const el = document.getElementById('firma-container');
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    document.execCommand('copy');
+    sel.removeAllRanges();
